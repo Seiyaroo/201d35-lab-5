@@ -90,6 +90,8 @@ function sumArray(testArray) {
 // Here is the test for sumArray(); uncomment it to run it
 
 testSumArray(testArray);
+    
+
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -104,12 +106,17 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
-
+function multiplyArray(testArray) { 
+    var mult1 = multiply(testArray [0], testArray [1]) [0];
+    var multResult = multiply(mult1, testArray [2]) [0];
+    var messageMult = 'The numbers ' + testArray + ' have a product of ' + multResult + '.';
+    return [multResult, messageMult];
 }
 
+// 'The numbers 2,3,4 have a product of 24.'
+
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
